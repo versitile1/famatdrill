@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>FAMAT Drill</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  How to get better at ciphering
+  <p>&nbsp;</p>
+
+  <div id='allTopics'>
+    <div class="blocks">Analytical Geometry/Vectors:
+      <br>
+      <select>
+        <option value='null'>Unselected</option>
+        <option value='vec_angle'>Angle Between Vector</option>
+        <option value='vec_pointtoplane'>Point to Plane Distance</option>
+        <option value='vec_pointtoline'>Point to Line Distance</option>
+        <option value='vec_paraarea'>Parallel Area</option>
+        <option value='vec_dotproducts'>Dot Products</option>
+        <option value='vec_cosangle'>Cosine of Angle</option>
+        <option value='vec_sinangle'>Sine + Cross Product Formula</option>
+        <option value='vec_threepointstoplane'>Three Points defining Plane</option>
+        <option value='vec_paratosym'>Convert parametrics to symmetric</option>
+        <option value='vec_symtopara'>Convert symmetric to parametrics</option>
+        <option value='vec_vectopara'>Convert vectors to parametrics</option>
+
+      </select>
+    </div>
+    
+    <div class="blocks">Trig:
+      <br>
+      <select>
+        <option value='null'>Unselected</option>
+        <option value='trig_values'>Basic Trig Values</option>
+      </select>
+    </div>
+
+    <div class="blocks">Matrices:
+      <br>
+      <select>
+        <option value='null'>Unselected</option>
+        <option value='mat_evalues'>Matrix Eigenvalues</option>
+        <option value='mat_evectors'>Matrix Eigenvectors</option>
+        <option value='mat_det'>Matrix Determinant</option>
+        <option value='mat_inverse'>Matrix Inverse</option>
+
+      </select>
+    </div>
+  </div>
+  
+  <div class="cell" style="margin-top: 30px;">
+    <button onclick='chooseTopic()'>Suprise Me with a Topic</button>
+  </div>
+
+  <div class="blocks">
+    <div>Selected Topic: None</div>
+    <button onclick='start()'>Start</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
