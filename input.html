@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>FAMAT Drill</title>
+	<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+	<style>
+		body{
+			font-family: Verdana, Geneva, sans-serif; 
+		}
+
+		.blocks{
+			padding: 0.3em 1em;
+		}
+
+		#allTopics{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: stretch;
+			align-content: stretch;
+		}
+
+		h1{
+			text-align: center;
+		}
+
+		h6{
+			font-size: .8em;
+			margin: 2em;
+		}
+
+		p{
+			margin: 2em;
+		}
+
+		#timer{
+			border: black;
+			color: black;
+			margin: 1em;
+			padding: 1em 2em;
+			font-size: 2em;
+			border-radius: 5px;
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			background-color: rgb(220, 220, 220);
+		}
+		#timer:hover{
+			cursor: pointer;
+			transition: 300ms;
+			background-color: rgb(180,180,180);
+		}
+	</style>
+
+
+
+	
+	<h1>0:00</h1>
+	<p></p>
+	<h6 style='display: none;'></h6>
+	<button id='timer' onclick="startTimer()">Start</button>
+	<button onclick='randomTopic()'>Random Topic</button>
+	<button onclick="reload()">Another Question</button>
+	<button onclick="goHome()">Home</button>
+</body>
+	<script src='input.js'></script>
+</html>
