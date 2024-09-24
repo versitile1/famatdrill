@@ -1,0 +1,42 @@
+body{
+	font-family: Verdana, Geneva, sans-serif; 
+}
+
+.blocks{
+	padding: 0.3em 1em;
+}
+
+#allTopics{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+h1{
+	text-align: center;
+}
+
+h6{
+	font-size: .8em
+}
+
+#timer{
+	border: black;
+	color: black;
+	margin: 1em;
+	padding: 1em 2em;
+	font-size: 2em;
+	border-radius: 5px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: rgb(220, 220, 220);
+}
+#timer:hover{
+	cursor: pointer;
+	transition: 300ms;
+	background-color: rgb(180,180,180);
+}
