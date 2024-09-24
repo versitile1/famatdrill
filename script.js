@@ -33,7 +33,7 @@ function start(){
 }
 
 function chooseTopic(){
-	window.location.href= `${this.origin}/famatdrill/input.html?${getRandomArrayElement(all_topics)}`;
+	window.location.href= `${this.location}/famatdrill/input.html?${getRandomArrayElement(all_topics)}`;
 }
 
 if (extraLink=='random'){
