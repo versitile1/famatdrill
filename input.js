@@ -41,6 +41,21 @@ function randomTopic(){
 function goHome(){
 	window.location.href = window.location.origin;
 }
+function trackLoads(){
+	if (localStorage.getItem('pageLoadCount')) {
+		// If it exists, parse and increment the value
+		let count = parseInt(localStorage.getItem('pageLoadCount'));
+		count += 1;
+		localStorage.setItem('pageLoadCount', count); // Update the value in localStorage
+		return count
+	} else {
+		// If it doesn't exist, initialize it with a value of 1
+		localStorage.setItem('pageLoadCount', 1);
+		return 1
+	}
+}
+document.getElementById("counter").innerHTML += trackLoads();
+
 
 //Speed Space Bar
 document.addEventListener("keydown", function(event) {
