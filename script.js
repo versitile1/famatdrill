@@ -28,13 +28,13 @@ function getRandomArrayElement(arr) {
 function start(){
 	for (let i = 0; i < allSelectors.length; i++){
 		if (allSelectors[i].value != 'null'){
-			window.location.href = `${this.location}/input.html?${allSelectors[i].value}`;
+			window.location.href = `${this.location}input.html?${allSelectors[i].value}`;
 		}
 	}
 }
 
 function chooseTopic(){
-	window.location.href= `${this.location}/input.html?${getRandomArrayElement(all_topics)}`;
+	window.location.href= `${this.location}input.html?${getRandomArrayElement(all_topics)}`;
 }
 
 if (extraLink=='random'){
