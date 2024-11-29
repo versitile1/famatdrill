@@ -36,10 +36,10 @@ function reload(){
 	location.reload();
 }
 function randomTopic(){
-	window.location.href = window.location.origin + this.location.pathname + '?random';
+	window.location.href = window.location.origin + '?random';
 }
 function goHome(){
-	window.location.href = window.location.origin + this.location.pathname;
+	window.location.href = window.location.origin;
 }
 function trackLoads(){
 	if (localStorage.getItem('pageLoadCount')) {
